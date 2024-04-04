@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
-import { PlayCircleIcon, PlayIcon, SpeakerWaveIcon } from "@heroicons/react/16/solid";
+import {
+  PlayCircleIcon,
+  PlayIcon,
+  SpeakerWaveIcon,
+} from "@heroicons/react/16/solid";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" flex flex-col">
-          <div className="flex min-h-[94vh] max-h-[94vh] select-none">
+        <div className=" flex h-screen flex-col justify-between">
+          <div className="flex min-h-[90vh] grow select-none">
             <Navbar />
             <div
               className="m-2 ml-0 w-full overflow-scroll rounded-md p-4 pt-2"
@@ -31,19 +35,19 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-          <div className="w-full p-4 pt-2 flex justify-between">
+          <div className="flex w-full justify-between p-4 pt-2">
             <div className="flex items-center gap-x-3">
               <div className="size-14 bg-red-50"></div>
               <div className="flex flex-col">
-              <p className="">Title</p>
-              <p className="text-xs opacity-70">Author</p>
+                <p className="">Title</p>
+                <p className="text-xs opacity-70">Author</p>
               </div>
             </div>
             <div>
               <PlayCircleIcon className="size-12" />
             </div>
             <div className="flex items-center">
-              <SpeakerWaveIcon className="size-5 fill-none stroke-white opacity-70"/>
+              <SpeakerWaveIcon className="size-5 fill-none stroke-white opacity-70" />
             </div>
           </div>
         </div>
