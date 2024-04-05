@@ -7,6 +7,7 @@ import {
   PlayIcon,
   SpeakerWaveIcon,
 } from "@heroicons/react/16/solid";
+import Card from "./_components/Card";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,13 +37,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="flex w-full justify-between p-4 pt-2">
-            <div className="flex items-center gap-x-3">
-              <div className="size-14 bg-red-50"></div>
-              <div className="flex flex-col">
-                <p className="">Title</p>
-                <p className="text-xs opacity-70">Author</p>
-              </div>
-            </div>
+            <Card type="small"/>
             <div>
               <PlayCircleIcon className="size-12" />
             </div>

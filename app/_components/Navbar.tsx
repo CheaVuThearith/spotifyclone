@@ -8,6 +8,7 @@ import {
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import NavbarLink from "./NavbarLink";
+import Card from "./Card";
 
 const Navbar = ({}) => {
   const [navExpanded, setNavExpanded] = useState(false);
@@ -59,15 +60,7 @@ const Navbar = ({}) => {
         <div
                    className={`flex w-full flex-col gap-y-5 overflow-scroll p-[18px]`}
         >
-          <div className="flex items-center gap-x-4">
-            <div className="size-9 shrink-0 rounded-sm bg-white"></div>
-            {showText && (
-              <span className="flex flex-col">
-                <p className="text-sm">Title</p>
-                <p className="text-xs opacity-70">Author</p>
-              </span>
-            )}
-          </div>
+        <Card type="hidden" showText={showText}/>
         </div>
       </div>
     </div>
