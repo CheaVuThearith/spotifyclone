@@ -1,18 +1,13 @@
 import React from "react";
 import Card from "../_components/Card";
+import CardContainer from "../_components/CardContainer";
 
 type Props = {};
 
 const page = async (props: Props) => {
   return (
     <>
-      <div
-        className="grid max-h-56 auto-rows-min gap-x-6 gap-y-2 overflow-hidden"
-        style={{ gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))" }}
-      >
-        {
-          //TODO:FIX THIS
-        }
+      <CardContainer>
         <Card type="big" />
         <Card type="big" />
         <Card type="big" />
@@ -25,7 +20,7 @@ const page = async (props: Props) => {
         <Card type="big" />
         <Card type="big" />
         <Card type="big" />
-      </div>
+      </CardContainer>
     </>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import AuthorAndDescription from "./AuthorAndDescription";
 
 type Props = {
-  type: "big" | "small"|"hidden";
+  type: "big" | "small" | "hidden";
   showText?: boolean;
 };
 
@@ -16,7 +16,8 @@ const Card = ({ type, showText }: Props) => {
           <div
             className={`${type === "big" ? "aspect-square min-w-40 max-w-52" : "size-14"} rounded-md bg-white`}
           ></div>
-          <AuthorAndDescription />
+          <AuthorAndDescription /> 
+          {/* 204 / 252 */}
         </div>
       </>
     );
