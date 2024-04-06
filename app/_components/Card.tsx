@@ -17,7 +17,6 @@ const Card = ({ type, showText }: Props) => {
             className={`${type === "big" ? "aspect-square min-w-40 max-w-52" : "size-14"} rounded-md bg-white`}
           ></div>
           <AuthorAndDescription /> 
-          {/* 204 / 252 */}
         </div>
       </>
     );

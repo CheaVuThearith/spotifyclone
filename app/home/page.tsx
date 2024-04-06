@@ -7,7 +7,7 @@ type Props = {};
 const page = async (props: Props) => {
   return (
     <>
-      <CardContainer>
+      <CardContainer key={1}>
         <Card type="big" />
         <Card type="big" />
         <Card type="big" />
