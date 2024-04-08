@@ -58,7 +58,7 @@ const Navbar = ({}) => {
           {showText && "Your Library"}
         </span>
         <div
-                   className={`flex w-full flex-col gap-y-5 overflow-scroll p-[18px]`}
+                   className={`flex w-full scrollbar-hide flex-col gap-y-5 overflow-scroll p-[18px]`}
         >
         <Card type="hidden" showText={showText}/>
         </div>
