@@ -4,26 +4,101 @@ import CardContainer from "../_components/CardContainer";
 
 type Props = {};
 
-const page = async (props: Props) => {
+const page =(props: Props) => {
   return (
-    <>
-      <CardContainer key={1}>
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
-        <Card type="big" />
+    <div className="flex flex-col gap-y-12">
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
       </CardContainer>
-    </>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+      <CardContainer>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+        <Card type="big"></Card>
+      </CardContainer>
+    </div>
   );
 };
-
 
 export default page;
