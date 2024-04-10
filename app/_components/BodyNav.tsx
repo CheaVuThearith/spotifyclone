@@ -11,8 +11,8 @@ const BodyNav = ({ search = false }: { search?: boolean }) => {
   const router = useRouter();
   return (
     <>
-      <div className="flex sticky top-0 items-center mb-8 justify-between">
-        <div className="flex items-center h-10 gap-x-2">
+      <div className="sticky top-0 z-50 mb-8 flex items-center justify-between">
+        <div className="flex h-10 items-center gap-x-2">
           <ChevronLeftIcon
             onClick={() => router.back()}
             className="size-8 cursor-pointer rounded-full bg-[#050505] fill-white hover:scale-105"

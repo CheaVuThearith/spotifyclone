@@ -37,42 +37,72 @@ export default function RootLayout({
             >
               <div>{children}</div>
               <div className="mt-20">
-                  <div className="flex flex-wrap grow gap-y-12 justify-between">
-                    <ul className="flex flex-col pe-24 gap-2 text-sm">
-                      <span className="font-bold">Company</span>
-                      <li className="opacity-70">About</li>
-                      <li className="opacity-70">Jobs</li>
-                      <li className="opacity-70">For the Record</li>
-                    </ul>
-                    <ul className="flex flex-col pe-24 gap-2 text-sm">
-                      <span className="font-bold">Communities</span>
-                      <li className="opacity-70">For Artists</li>
-                      <li className="opacity-70">Developers</li>
-                      <li className="opacity-70">Advertising</li>
-                      <li className="opacity-70">Investors</li>
-                      <li className="opacity-70">Vendors</li>
-                    </ul>
-                    <ul className="flex flex-col pe-24 gap-2 text-sm">
-                      <span className="font-bold">Useful links</span>
-                      <li className="opacity-70">Support</li>
-                      <li className="opacity-70">Free Mobile App</li>
-                    </ul>
-                    <ul className="flex flex-col pe-24 gap-2 text-sm">
-                      <span className="font-bold">Spotify Plans</span>
-                      <li className="opacity-70">Premium Individual</li>
-                      <li className="opacity-70">Premium Duo</li>
-                      <li className="opacity-70">Premium Family</li>
-                      <li className="opacity-70">Premium Student</li>
-                      <li className="opacity-70">Spotify Free</li>
-                    </ul>
-                  <div className="flex gap-x-4 items-center">
-                        <div className="size-9 rounded-full opacity-20 bg-white"></div>
-                        <div className="size-9 rounded-full opacity-20 bg-white"></div>
-                        <div className="size-9 rounded-full opacity-20 bg-white"></div>
+                <div className="flex grow flex-wrap justify-between gap-y-12">
+                  <ul className="flex flex-col gap-2 pe-24 text-sm">
+                    <span className="font-bold">Company</span>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      About
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Jobs
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      For the Record
+                    </li>
+                  </ul>
+                  <ul className="flex flex-col gap-2 pe-24 text-sm">
+                    <span className="font-bold">Communities</span>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      For Artists
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Developers
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Advertising
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Investors
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Vendors
+                    </li>
+                  </ul>
+                  <ul className="flex flex-col gap-2 pe-24 text-sm">
+                    <span className="font-bold">Useful links</span>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Support
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Free Mobile App
+                    </li>
+                  </ul>
+                  <ul className="flex flex-col gap-2 pe-24 text-sm">
+                    <span className="font-bold">Spotify Plans</span>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Premium Individual
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Premium Duo
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Premium Family
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Premium Student
+                    </li>
+                    <li className="cursor-pointer opacity-70 transition-all hover:opacity-100">
+                      Spotify Free
+                    </li>
+                  </ul>
+                  <div className="flex items-center gap-x-4">
+                    <div className="size-9 rounded-full bg-white opacity-20"></div>
+                    <div className="size-9 rounded-full bg-white opacity-20"></div>
+                    <div className="size-9 rounded-full bg-white opacity-20"></div>
                   </div>
-                  </div>
-                <div className="mt-10 flex w-full shrink-0 items-center justify-between border-t border-[#ffffff20] py-10">
-                  <div className="flex gap-x-4 text-xs">
+                </div>
+                <div className="mt-10 flex w-full shrink-0 items-center flex-wrap justify-between border-t gap-y-4 border-[#ffffff20] py-10">
+                  <div className="flex me-16 gap-x-4 text-xs">
                     <p className="cursor-pointer opacity-70 transition-all hover:opacity-100">
                       Legal
                     </p>
