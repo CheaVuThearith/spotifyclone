@@ -6,7 +6,7 @@ type Props = {};
 const SongList = (props: Props) => {
   return (
     <>
-      <tr className="h-20 relative after:inset-0 after:absolute after:transition-all after:hover:bg-[#ffffff17] after:rounded-lg">
+      <tr className="h-20 relative after:inset-0 after:absolute after:transition-none after:hover:bg-[#ffffff17] after:rounded-lg">
         <td className="text-center">1</td>
         <td>
           <Card type="small" />
