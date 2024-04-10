@@ -32,173 +32,19 @@ const layout = ({ children }: Props) => {
             <Bars3Icon className="size-5 opacity-70" />
           </div>
         </div>
-        <table className="text-sm w-full">
-          <thead className="pb1">
-            <tr className="opacity-70">
-              <th className="text-start font-normal ">#</th>
-              <th className="text-start font-normal">Title</th>
-              <th className="text-start font-normal">Album</th>
-              <th className="text-start font-normal">Date added</th>
-              <th className="text-start font-normal">
+        <table className="w-full table-auto text-sm ">
+          <thead className="">
+            <tr className="border-b border-[#ffffff20] opacity-70">
+              <th className="pb-2 px-2 text-center font-normal">#</th>
+              <th className="pb-2 text-start font-normal">Title</th>
+              <th className="pb-2 text-start font-normal">Album</th>
+              <th className="pb-2 text-start font-normal">Date added</th>
+              <th className="pb-2 text-start font-normal">
                 <ClockIcon className="size-4" />
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <Card type="small" />
-              </td>
-              <td>Album Name</td>
-              <td>dd:mm:yy</td>
-              <td>mm:ss</td>
-            </tr>
-          </tbody>
+          <tbody className="">{children}</tbody>
         </table>
       </div>
     </>
