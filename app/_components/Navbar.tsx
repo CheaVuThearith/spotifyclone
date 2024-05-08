@@ -11,15 +11,15 @@ import NavbarLink from "./NavbarLink";
 import Card from "./Card";
 
 const Navbar = ({}) => {
-  const [navExpanded, setNavExpanded] = useState(false);
+  const [navExpanded, setNavExpanded_] = useState(false);
   const [showText, setShowText] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
+  const setNavExpanded = (a: any) => {
+    setNavExpanded_(a);
     showText
       ? setShowText((s) => !s)
       : setTimeout(() => setShowText((s) => !s), 200);
-  }, [navExpanded]);
+  };
   return (
     <div
       className={`sticky top-0 flex h-full flex-col items-center gap-y-2 p-2 transition-all ${navExpanded ? "w-96" : "w-[88px]"}`}
@@ -47,7 +47,7 @@ const Navbar = ({}) => {
         className={`flex h-full flex-col items-center gap-y-5 overflow-hidden rounded-md bg-[#121212] transition-all ${navExpanded ? "w-[368px]" : "w-[72px]"}`}
       >
         <span
-          onClick={() => setNavExpanded((e) => !e)}
+          onClick={() => setNavExpanded((e:any) => !e)}
           className={`sticky top-0 flex w-full cursor-pointer items-center gap-x-5 p-5 pb-0 font-bold text-white transition-all duration-500 hover:opacity-100 ${navExpanded ? "opacity-100" : "opacity-70"}`}
         >
           <BookmarkIcon
@@ -58,9 +58,9 @@ const Navbar = ({}) => {
           {showText && "Your Library"}
         </span>
         <div
-                   className={`flex w-full scrollbar-hide flex-col gap-y-5 overflow-scroll p-[18px]`}
+          className={`scrollbar-hide flex w-full flex-col gap-y-5 overflow-scroll p-[18px]`}
         >
-        <Card type="hidden" showText={showText}/>
+          <Card type="hidden" showText={showText} />
         </div>
       </div>
     </div>

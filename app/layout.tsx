@@ -101,8 +101,8 @@ export default function RootLayout({
                     <div className="size-9 rounded-full bg-white opacity-20"></div>
                   </div>
                 </div>
-                <div className="mt-10 flex w-full shrink-0 items-center flex-wrap justify-between border-t gap-y-4 border-[#ffffff20] py-10">
-                  <div className="flex me-16 gap-x-4 text-xs">
+                <div className="mt-10 flex w-full shrink-0 flex-wrap items-center justify-between gap-y-4 border-t border-[#ffffff20] py-10">
+                  <div className="me-16 flex gap-x-4 text-xs">
                     <p className="cursor-pointer opacity-70 transition-all hover:opacity-100">
                       Legal
                     </p>

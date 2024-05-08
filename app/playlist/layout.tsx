@@ -1,11 +1,9 @@
 import React, { ReactNode } from "react";
 import Card from "../_components/Card";
 import {
-  Bars3BottomLeftIcon,
   Bars3Icon,
   ClockIcon,
   PlayCircleIcon,
-  PlusCircleIcon,
   PlusIcon,
 } from "@heroicons/react/16/solid";
 import BodyNav from "../_components/BodyNav";
